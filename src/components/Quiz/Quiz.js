@@ -1,8 +1,13 @@
 import React from "react";
-import { ArrowDownLeftIcon, ArrowLeftCircleIcon, ArrowRightIcon, BeakerIcon } from '@heroicons/react/24/solid'
+import { ArrowRightIcon} from '@heroicons/react/24/solid'
+import { useNavigate } from "react-router-dom";
 
 const Quiz = ({ quiz }) => {
-  const { name, logo, total } = quiz;
+  const { id,name, logo, total } = quiz;
+  const navigate=useNavigate()
+  const handleToStartQuiz=()=>{
+    navigate(`/quiz/${id}`)
+  }
   return (
     <div>
       <div className="shadow-lg p-3 rounded-3">
@@ -14,7 +19,7 @@ const Quiz = ({ quiz }) => {
         />
         <div className="d-flex  align-items-center justify-content-between ">
           <p className="fw-bold mt-3">{name}</p>
-          <button style={{ backgroundColor: "#AED581"}} className="text-white fw-bold border-0 rounded-1 py-1 px-2">Start quiz
+          <button onClick={()=>handleToStartQuiz()} style={{ backgroundColor: "#AED581"}} className="text-white fw-bold border-0 rounded-1 py-1 px-2">Start quiz
            <ArrowRightIcon style={{width:'20px'}} ></ArrowRightIcon>
           </button>
         </div>
