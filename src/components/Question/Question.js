@@ -46,12 +46,13 @@ const Question = ({ question, id }) => {
         ></EyeIcon>
       </div>
       <div  className="row row-cols-2">
-        {quizOption.map((options) => (
+        {quizOption.map((option) => (
           <Option
-            options={options}
+            option={option}
+            name={id}
             id={id}
             handleRightAnswer={handleRightAnswer}
-            key={options.id}
+            key={option.id}
           ></Option>
         ))}
       </div>
