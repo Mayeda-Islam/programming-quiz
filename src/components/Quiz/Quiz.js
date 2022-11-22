@@ -10,7 +10,8 @@ const Quiz = ({ quiz }) => {
   }
   return (
     <div>
-      <div className="shadow-lg p-3 rounded-3">
+        
+      <div  style={{backgroundColor :'#EDEDED'}} className="shadow-lg  p-3 rounded-3">
         <img
           style={{ backgroundColor: "#AED581", width: "200px" }}
           className="rounded-3"
