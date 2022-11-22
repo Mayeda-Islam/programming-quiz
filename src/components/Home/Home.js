@@ -10,13 +10,12 @@ const Home = () => {
       <div
         style={{
           backgroundImage: `url(${img})`,
-          height: "100vh",
           backgroundRepeat: " no-repeat",
           backgroundSize: "cover",
           objectFit: 'cover',
         }}
       >
-        <div className="container pt-5">
+        <div className="container py-5">
         <div style={{ color: "#EDEDED",}} className="text-center  fw-bold fs-5">
           <h2>Programming Quizz</h2>
           <p>

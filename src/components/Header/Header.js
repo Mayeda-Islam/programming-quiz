@@ -7,8 +7,8 @@ const Header = () => {
     backgroundColor: "#7CB342",
   };
   return (
-    <nav class="container navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
+    <nav class="navbar sticky-top navbar-expand-lg bg-light">
+      <div class="container">
         <NavLink to={"/"} className="navbar-brand">
           Programming Quizz
         </NavLink>

@@ -32,9 +32,10 @@ function App() {
         { path: "about", element: <About></About> },
         { path: "statistics", element: <Statistics></Statistics> },
         { path: "blog", element: <Blog></Blog> },
+        { path: "*", element: <NotFound></NotFound> },
       ],
     },
-    { path: "*", element: <NotFound></NotFound> },
+    
   ]);
   return (
     <div>
