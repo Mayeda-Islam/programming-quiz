@@ -2,7 +2,8 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div className='container'>
+        <div style={{backgroundColor: "#AED581",height:'100vh'}} >
+            <div className='container pt-5'>
             <h3>Programming Quizz</h3>
             <p>Programming quizz website is created by using:</p>
             <ul><li>
@@ -21,6 +22,7 @@ const About = () => {
                 <li>Home page has differeent kinds of cards,which has a button.the button take you to next page of quiz</li>
                 <li>In quiz section you can check your programming knowledge</li>
             </ul>
+            </div>
         </div>
     );
 };

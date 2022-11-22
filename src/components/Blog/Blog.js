@@ -2,7 +2,7 @@ import React from "react";
 
 const Blog = () => {
   return (
-    <div style={{backgroundColor: "#AED581"}} className='p-5'>
+    <div style={{backgroundColor: "#AED581",height:'100vh'}} className='p-5'>
     <div className="container text-justify " style={{color:'#505050'}}>
     <section >
         <h2>What is the purpose of react router?</h2>
