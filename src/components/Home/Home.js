@@ -13,6 +13,7 @@ const Home = () => {
           height: "100vh",
           backgroundRepeat: " no-repeat",
           backgroundSize: "cover",
+          objectFit: 'cover',
         }}
       >
         <div className="container pt-5">
