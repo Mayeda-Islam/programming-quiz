@@ -29,7 +29,7 @@ const Home = () => {
             computer program.
           </p>
         </div>
-        <div className="mt-5 d-flex flex-column flex-md-row align-items-center justify-content-around">
+        <div className="mt-5 d-flex flex-column flex-md-row  align-items-center justify-content-around">
         {quizTopic.data.map((quiz) => (
           <Quiz key={quiz.id} quiz={quiz}></Quiz>
         ))}

@@ -45,7 +45,7 @@ const Question = ({ question, id }) => {
           style={{ width: "30px" }}
         ></EyeIcon>
       </div>
-      <div  className="row row-cols-2">
+      <div  className="row row-cols-1 row-cols-md-2 ">
         {quizOption.map((option) => (
           <Option
             option={option}
